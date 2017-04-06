@@ -5,7 +5,13 @@ class Comments extends React.Component{
 
 render(){
 	return (
-		<h1 className="commentsDiv">Comments</h1>
+		<div className="commentsDiv">
+		<form>
+			<input type="text" placeholder="Name" id="textBox"/>
+			<input type="email" placeholder="Email" id="textBox"/>
+			<input type="textarea" placeholder="Comments" id="commentBox"/>
+		</form>
+		</div>
 
 	)
 }

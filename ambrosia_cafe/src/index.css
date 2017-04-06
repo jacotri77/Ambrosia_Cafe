@@ -9,7 +9,7 @@ html {
 *{
 	font-family: 'Rokkitt', serif;
 	font-weight: normal;
-	color:#ebedfa;
+	color:#494d4d;
 	background-color: #e9f5f5;
 }
 
@@ -23,7 +23,7 @@ html {
 .logoSpan{
 	width:40%;
 	height: 145px;
-	font-size: 48px;
+	font-size: 60px;
 	text-align: left;
 	line-height: 145px;
 	display: block;
@@ -79,15 +79,43 @@ html {
 }
 
 .tripleBoxDiv{
-	height:400px;
+	height:300px;
 	width:1440px;
 	border:2px solid black;
 	margin: 20px auto;
+	text-align: center;
+}
+
+.indvBox{
+	display: inline-block;
+	height: 250px;
+	width:28%;
+	border:2px solid black;
+	margin: 20px 10px;
+	text-align: center;
+
 }
 
 .commentsDiv{
-	height:200px;
+	height:250px;
 	width:1440px;
 	border: 2px solid black;
 	margin: 20px auto;
+}
+
+#commentBox{
+	height: 125px;
+	width:350px;
+	resize:none;
+	margin: 10px 0px 0px 20px;
+	outline:2px solid black;
+	border:0px;
+}
+#textBox{
+	display: block;
+	height:40px;
+	width: 350px;
+	margin: 10px 0px 0px 20px;
+	outline: 2px solid black;
+	border:0px;
 }

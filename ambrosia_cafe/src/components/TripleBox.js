@@ -5,7 +5,11 @@ class TripleBox extends React.Component{
 
 render(){
 	return (
-		<h1 className="tripleBoxDiv">Triple Box</h1>
+		<div className="tripleBoxDiv">
+		<section className="indvBox">News</section>
+		<section className="indvBox">Specials</section>
+		<section className="indvBox">Location</section>
+		</div>
 
 	)
 }

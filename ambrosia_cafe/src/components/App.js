@@ -1,4 +1,6 @@
 import React from 'react'
+import store from '../store'
+import {getMenu} from '../api/menu'
 
 const styles = {
 	acc:{
@@ -44,6 +46,10 @@ const styles = {
 	}
 }
 class App extends React.Component {
+		constructor() {
+    	super();
+    	this.state = {menu: []}
+  	}
   	handleAcc = (e) => {
   		if (this.refs[e.target.value].className.indexOf("w3-show") === -1){
 			this.refs.storyOpener.className = this.refs.storyOpener.className.replace (" w3-show", "")
@@ -55,6 +61,21 @@ class App extends React.Component {
 			this.refs[e.target.value].className = this.refs.storyOpener.className.replace (" w3-show", "")
 		}
 	}
+	componentWillMount() {
+    	this.unsubscribe = store.subscribe(()=>{
+      		const appState = store.getState()
+		
+			this.setState({
+        		menu: appState.menuReducer.menu
+      		})
+    	})
+    	getMenu()
+    	console.log("Next log is APp store.getState().menuReducer")
+    	console.log(store.getState().menuReducer.menu)
+  	}
+  	componentWillUnmount() {
+    	this.unsubscribe()
+  	}
   	render() {
     	return (
       		<div  style={styles.acc}>

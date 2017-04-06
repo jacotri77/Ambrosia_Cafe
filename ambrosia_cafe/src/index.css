@@ -1,5 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+
+
+.logoDiv{
+	height:150px;
+	width:1440px;
+	border:2px solid black;
+}
+
+.interiorDiv{
+	height:700px;
+	width:1440px;
+	border:2px solid black;
+}
+
+.accordionDiv{
+	height:200px;
+	width:1440px;
+	border:2px solid black;
+}
+
+.tripleBoxDiv{
+	height:400px;
+	width:1440px;
+	border:2px solid black;
+}
+
+.commentsDiv{
+	height:200px;
+	width:1440px;
+	border: 2px solid black;
 }

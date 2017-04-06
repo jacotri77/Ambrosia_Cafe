@@ -1,0 +1,44 @@
+{
+	"cakes": [
+		{
+			"id": 1,
+			"item":	"RedVelvet",
+			"description": "",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl": "" 
+		},
+		{
+			"id": 2,
+			"item": "",
+			"description": "",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl": ""
+		},
+		{
+			"id": 3,
+			"item": "",
+			"description": "",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl" : "" 
+		},
+		{
+			"id": 4,
+			"item": "",
+			"description": "",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl" : "" 
+		}
+	]
+}

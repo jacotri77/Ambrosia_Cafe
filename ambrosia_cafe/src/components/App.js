@@ -11,6 +11,20 @@ const styles = {
 		justifyContent: 'space-between',
 		padding: 0
 	},
+	menu:{
+		height: 300,
+		width: 1440,
+		display: 'flex',
+		justifyContent: 'space-between',
+		padding: 0
+	},
+	reservations:{
+		height: 300,
+		width: 1440,
+		display: 'flex',
+		justifyContent: 'space-between',
+		padding: 0
+	},
 	leftPhotos:{
 		height:300,
 		width:300,
@@ -31,27 +45,36 @@ const styles = {
 }
 class App extends React.Component {
   	handleAcc = (e) => {
-  		console.log(this.refs.storyOpener.className)
-  		if (this.refs.storyOpener.className.indexOf("w3-show") === -1){
-			this.refs.storyOpener.className += " w3-show"
+  		if (this.refs[e.target.value].className.indexOf("w3-show") === -1){
+			this.refs.storyOpener.className = this.refs.storyOpener.className.replace (" w3-show", "")
+			this.refs.menuOpener.className = this.refs.storyOpener.className.replace (" w3-show", "")
+			this.refs.reservationsOpener.className = this.refs.storyOpener.className.replace (" w3-show", "")
+			this.refs[e.target.value].className += " w3-show"
 		}
 		else{
-			this.refs.storyOpener.className = this.refs.storyOpener.className.replace (" w3-show", "")
-			console.log(this.refs.storyOpener.className)
+			this.refs[e.target.value].className = this.refs.storyOpener.className.replace (" w3-show", "")
 		}
 	}
   	render() {
     	return (
       		<div  style={styles.acc}>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"storyOpener"}> Story</button>
-      			<div style={styles.story} className="w3-hide w3-btn w3-block w3-black w3-left-align" ref="storyOpener">
+      			<div style={styles.story} className="w3-hide w3-btn w3-block" ref="storyOpener">
       				<div style={styles.leftPhotos}></div>
       				<p style={styles.storyText}>Block of Text from API for Story |  Block of Text from API for Story </p>
       				<div style={styles.rightPhotos}></div>
       			</div>
-      			<div className='accSection' style={styles.menu}> Menu
+      			<button type="button" className='accSection' onClick={this.handleAcc} value={"menuOpener"}> Menu</button>
+      			<div className="w3-hide w3-btn w3-block" style={styles.menu} ref="menuOpener">
+      				<div style={styles.leftPhotos}></div>
+      				<p style={styles.storyText}>Menu items from API | Menu items from API | Menu Items from API </p>
+      				<div style={styles.rightPhotos}></div>
       			</div>
-      			<div className='accSection' style={styles.reservations}> Reservations
+      			<button type="button" className='accSection' onClick={this.handleAcc} value={"reservationsOpener"}> Reservations</button>
+      			<div className="w3-hide w3-btn w3-block" style={styles.reservations} ref="reservationsOpener"> 
+      				<div style={styles.leftPhotos}></div>
+      				<p style={styles.storyText}> Rervations Form | Reservations Form | Reservations Form </p>
+      				<div style={styles.rightPhotos}></div>
       			</div>
       		</div>
     	)

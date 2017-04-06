@@ -7,7 +7,7 @@ html {
 }
 
 *{
-	font-family: 'Questrial', sans-serif;
+	font-family: 'Rock Salt', cursive;
 	font-weight: normal;
 	color:white;
 	
@@ -17,7 +17,6 @@ html {
 .logoDiv{
 	height:150px;
 	width:1440px;
-	border:2px solid black;
 	margin: 0px auto;
 	background-color: #233743;
 }
@@ -70,15 +69,16 @@ html {
 	width:1440px;
 	border:2px solid black;
 	margin: 20px auto;
+	color:#233743;
 }
 
 .tripleBoxDiv{
 	height:300px;
 	width:1440px;
-	border:2px solid black;
 	margin: 20px auto;
 	text-align: center;
 	background-color: transparent;
+	color:#233743;
 }
 
 .indvBox{
@@ -88,6 +88,7 @@ html {
 	border:2px solid black;
 	margin: 20px 10px;
 	text-align: center;
+	color:#233743;
 
 }
 
@@ -95,7 +96,7 @@ html {
 
 	height:250px;
 	width:1440px;
-	border: 2px solid black;
+	border: 2px solid #233743;
 	margin: 20px auto;
 	background-color: #233743;
 }

@@ -9,12 +9,12 @@ render(){
 	return (
 		<div className="interiorDiv">
 		<Carousel>
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide1" alt="#"/>
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2" alt="#"/>
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3" alt="#"/>
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4" alt="#"/>
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" alt="#"/>
-        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" alt="#"/>
+        <img src={require("../images/cakeRestaurant.jpg")}  alt="#"/>
+        <img src={require("../images/cake1.jpg")} alt="#"/>
+        <img src={require("../images/cake2.jpg")}  alt="#"/>
+        <img src={require("../images/cake3.jpg")}  alt="#"/>
+        <img src={require("../images/cake4.jpg")}  alt="#"/>
+        <img src={require("../images/cake5.jpg")}  alt="#"/>
       </Carousel>
       </div>
     )

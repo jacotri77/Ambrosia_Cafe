@@ -9,7 +9,6 @@ export default React.createClass({
   render() {
     return (
     	 <div>
-      <h1>Ambrosia Cafe</h1>
       	<Logo />
       	<InteriorImages />
       	<Accordion />

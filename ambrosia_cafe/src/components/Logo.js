@@ -5,8 +5,17 @@ class Logo extends React.Component{
 
 render(){
 	return (
-		<h1 className="logoDiv">this is our logo</h1>
-
+		<div className="logoDiv">
+		<span className="logoSpan">Ambrosia Cafe</span>
+		<div className="social">
+			<ul>
+				<li><img src={require("../images/noun_258111_cc.png")} alt="#" className="socialIcon"/></li>
+				<li><img src={require("../images/noun_467225_cc.png")} alt="#" className="socialIcon"/></li>
+				<li><img src={require("../images/noun_202408_cc.png")} alt="#" className="socialIcon"/></li>
+				<li><img src={require("../images/2000px-Yelp.png")} alt="#" className="socialIcon"/></li>
+			</ul>
+		</div>
+		</div>
 
 
 	)

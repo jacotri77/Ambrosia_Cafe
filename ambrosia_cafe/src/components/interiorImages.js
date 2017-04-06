@@ -1,17 +1,17 @@
 import React from 'react'
 import  '../index.css'
 
-class Logo extends React.Component{
+class InteriorImages extends React.Component{
 
 render(){
 	return (
-		<h1 className="interiorDiv">images</h1>
-
-
+		<div className="interiorDiv">
+		<img src="http://www.luxurysocietyasia.com/wp-content/uploads/one-and-only-reethi-rah-grand-sunset-residence-1440x900.jpg" alt="#"/>
+		</div>
 
 	)
 }
 
 }
 
-export default Logo
+export default InteriorImages

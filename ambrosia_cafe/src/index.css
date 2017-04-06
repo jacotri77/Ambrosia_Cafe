@@ -6,34 +6,88 @@ html {
 	box-sizing: inherit;
 }
 
-
+*{
+	font-family: 'Rokkitt', serif;
+	font-weight: normal;
+	color:#ebedfa;
+	background-color: #e9f5f5;
+}
 
 .logoDiv{
 	height:150px;
 	width:1440px;
 	border:2px solid black;
+	margin: 20px auto;
 }
 
-.interiorDiv{
+.logoSpan{
+	width:40%;
+	height: 145px;
+	font-size: 48px;
+	text-align: left;
+	line-height: 145px;
+	display: block;
+	float: left;
+	clear: left;
+	padding-left: 150px;
+}
+
+.social, .social ul{
+	height: 60px;
+	display: inline-block;
+	float:right;
+	list-style: none;
+
+}
+
+.social{
+	width:25%;
+	height:60px;
+	line-height: 145px;
+}
+
+.social li{
+	display: inline-block;
+	height:60px;
+
+}
+
+.socialIcon{
+	
+	height:50px;
+	width:50px;
+	
+}
+
+.interiorDiv,.interiorDiv img{
 	height:700px;
 	width:1440px;
-	border:2px solid black;
+	
+
+	
+}
+.interiorDiv{
+	margin: 20px auto;
+	
 }
 
 .accordionDiv{
 	height:200px;
 	width:1440px;
 	border:2px solid black;
+	margin: 20px auto;
 }
 
 .tripleBoxDiv{
 	height:400px;
 	width:1440px;
 	border:2px solid black;
+	margin: 20px auto;
 }
 
 .commentsDiv{
 	height:200px;
 	width:1440px;
 	border: 2px solid black;
+	margin: 20px auto;
 }

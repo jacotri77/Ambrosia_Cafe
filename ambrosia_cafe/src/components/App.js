@@ -11,21 +11,24 @@ const styles = {
 		width: 1440,
 		display: 'flex',
 		justifyContent: 'space-between',
-		padding: 0
+		padding: 0,
+		backgroundColor: '#233743'
 	},
 	menu:{
 		height: 300,
 		width: 1440,
 		display: 'flex',
 		justifyContent: 'space-between',
-		padding: 0
+		padding: 0,
+		backgroundColor: '#233743'
 	},
 	reservations:{
 		height: 300,
 		width: 1440,
 		display: 'flex',
 		justifyContent: 'space-between',
-		padding: 0
+		padding: 0,
+		backgroundColor: '#233743'
 	},
 	leftPhotos:{
 		height:300,
@@ -37,12 +40,42 @@ const styles = {
 		height:300,
 		width:300,
 		background: 'pink',
-		float: 'right'
+		float: 'right',
+		clear:' right'
 	},
 	storyText:{
-		fontSize: 18,
+		fontSize: 14,
 		padding: '0px 40px 0px 40px',
-		display: 'inline-block'
+		display: 'inline-block',
+		fontFamily: 'Rock Salt',
+    	color: 'white',
+    	width: 840
+	},
+	menuBlock:{
+		width: 840,
+		display:'inline-block',
+		padding:'10px, 20px',
+		float: 'left'
+	},
+	menuText:{
+		fontSize: 14,
+		fontFamily: 'Rock Salt',
+    	color: 'white',
+    	width: 840,
+    	margin: '10px'
+	},
+	reservationForm:{
+		fontSize: 14,
+		padding: '0px 40px 0px 40px',
+		display: 'inline-block',
+		fontFamily: 'Rock Salt',
+    	color: 'white',
+    	width: 840
+	},
+	menuCategory:{
+		fontSize: 20,
+		fontFamily: 'Rock Salt',
+    	color: 'white'
 	}
 }
 class App extends React.Component {
@@ -63,20 +96,19 @@ class App extends React.Component {
 	}
 	componentWillMount() {
     	this.unsubscribe = store.subscribe(()=>{
-      		const appState = store.getState()
+      		const appState = store.getState().menuReducer.menu
 		
 			this.setState({
-        		menu: appState.menuReducer.menu
+        		menu: appState
       		})
     	})
     	getMenu()
-    	console.log("Next log is APp store.getState().menuReducer")
-    	console.log(store.getState().menuReducer.menu)
   	}
   	componentWillUnmount() {
     	this.unsubscribe()
   	}
   	render() {
+  		
     	return (
       		<div  style={styles.acc}>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"storyOpener"}> Story</button>
@@ -88,13 +120,20 @@ class App extends React.Component {
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"menuOpener"}> Menu</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.menu} ref="menuOpener">
       				<div style={styles.leftPhotos}></div>
-      				<p style={styles.storyText}>Menu items from API | Menu items from API | Menu Items from API </p>
+      				<div style={styles.menuBlock}>
+      					<span style={styles.menuCategory}> Our Delectable Array of Cakes </span>
+      					{this.state.menu.map(function(cake){
+      						return (
+							<div key={cake.id} style={styles.menuText}>{cake.description}</div>
+							)
+      					})}
+      				</div>
       				<div style={styles.rightPhotos}></div>
       			</div>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"reservationsOpener"}> Reservations</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.reservations} ref="reservationsOpener"> 
       				<div style={styles.leftPhotos}></div>
-      				<p style={styles.storyText}> Rervations Form | Reservations Form | Reservations Form </p>
+      				<p style={styles.reservationForm}> Rervations Form | Reservations Form | Reservations Form </p>
       				<div style={styles.rightPhotos}></div>
       			</div>
       		</div>

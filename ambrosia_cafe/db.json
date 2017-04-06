@@ -2,38 +2,38 @@
 	"cakes": [
 		{
 			"id": 1,
-			"item":	"RedVelvet",
-			"description": "",
+			"item":	"Red Velvet Cake",
+			"description": "This classic red velvet layer cake is made satisfyingly tender with buttermilk and topped with delicious silky white icing. An unquestionable wonder of the dessert world.",
 			"allergies": "",
 			"favorite": "",
 			"spicy": "",
-			"vegan": "",
+			"vegan": "0",
 			"photoUrl": "" 
 		},
 		{
 			"id": 2,
 			"item": "",
-			"description": "",
+			"description": "Oreo crust, creamy peanut butter cheesecake filling loaded with chocolate chips, milk chocolate ganache with a pile of chopped Reese’s cups on top. Believe it or not this entry tastes even better than it looks.",
 			"allergies": "",
 			"favorite": "",
 			"spicy": "",
-			"vegan": "",
+			"vegan": "0",
 			"photoUrl": ""
 		},
 		{
 			"id": 3,
-			"item": "",
-			"description": "",
+			"item": "Extreme Double Chocolate Fudge Cake",
+			"description": "A rich moist chocolate cake with a chocolate buttercream icing swaddled in a lovely coat of delicious chocolate chips. This wonderous chocolatey beast is a serious contender for best cake in the world!",
 			"allergies": "",
 			"favorite": "",
 			"spicy": "",
-			"vegan": "",
+			"vegan": "0",
 			"photoUrl" : "" 
 		},
 		{
 			"id": 4,
-			"item": "",
-			"description": "",
+			"item": "Chocalate Oreo Cake",
+			"description": "This Chocolate Oreo Cake is to die for! A moist chocolate cake full of Oreo icing FULL of crushed up Oreos. An absolutely stunning cake dream realized for your feasting pleasure.",
 			"allergies": "",
 			"favorite": "",
 			"spicy": "",

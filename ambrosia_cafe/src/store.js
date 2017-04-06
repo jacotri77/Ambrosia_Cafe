@@ -2,7 +2,7 @@ import {combineReducers, createStore} from 'redux'
 import menuReducer from './reducers/menu'
 
 const rootReducer = combineReducers({
-	menuReducer
+  menuReducer
 })
 
 const store = createStore(rootReducer)

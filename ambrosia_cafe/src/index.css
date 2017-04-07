@@ -53,3 +53,15 @@ li span{
    z-index:-1;
    color: white;
 }
+.leftPhotos, .rightPhotos{
+    height: 100%;
+    width: 300px;
+    background: purple;
+    display: inline-block;
+}
+.leftPhotos{   
+  float: left;
+}
+.rightPhotos:{
+    float: right;
+}

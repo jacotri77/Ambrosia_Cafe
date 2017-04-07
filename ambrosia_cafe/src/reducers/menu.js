@@ -4,8 +4,7 @@ const initialState = {
 
 export default function(state=initialState, action) {
 	switch (action.type) {
-		case 'GET_M':
-		//console.log(action.menu.cakes , "action")
+		case 'GET_M': 
 			return {...state, menu: [...action.menu.cakes] }
 		default:
 			return state

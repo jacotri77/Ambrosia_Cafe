@@ -9,43 +9,37 @@ const styles = {
 	story:{
 		height: 300,
 		width: 1440,
-		display: 'flex',
-		justifyContent: 'space-between',
 		padding: 0,
 		backgroundColor: '#233743'
 	},
 	menu:{
-		height: 300,
+		height: 900,
 		width: 1440,
-		display: 'flex',
-		justifyContent: 'space-between',
 		padding: 0,
-		backgroundColor: '#233743'
+		backgroundColor: '#233743',
 	},
 	reservations:{
 		height: 300,
 		width: 1440,
-		display: 'flex',
-		justifyContent: 'space-between',
 		padding: 0,
 		backgroundColor: '#233743'
 	},
 	leftPhotos:{
-		height:300,
+		height:"100%",
 		width:300,
 		background: 'purple',
+		display: 'inline-block',
 		float: 'left'
 	},
 	rightPhotos:{
-		height:300,
+		height:"100%",
 		width:300,
 		background: 'pink',
-		float: 'right',
-		clear:' right'
+		display: 'inline-block',
+		float: 'right'
 	},
 	storyText:{
 		fontSize: 14,
-		padding: '0px 40px 0px 40px',
 		display: 'inline-block',
 		fontFamily: 'Rock Salt',
     	color: 'white',
@@ -53,27 +47,37 @@ const styles = {
 	},
 	menuBlock:{
 		width: 840,
+		height:300,
 		display:'inline-block',
 		padding:'10px, 20px',
-		float: 'left'
 	},
-	menuText:{
-		fontSize: 14,
+	menuDescription:{
+		fontSize: 12,
 		fontFamily: 'Rock Salt',
     	color: 'white',
-    	width: 840,
+    	width: 750,
+    	margin: '10px',
+    	overflow: 'hidden',
+    	textOverflow: 'initial',
+    	whiteSpace: 'normal',
+    	overflow: 'auto'
+	},
+	menuItem:{
+		fontSize: 16,
+		fontFamily: 'Rock Salt',
+    	color: 'white',
+    	width: 400,
     	margin: '10px'
 	},
 	reservationForm:{
 		fontSize: 14,
-		padding: '0px 40px 0px 40px',
 		display: 'inline-block',
 		fontFamily: 'Rock Salt',
     	color: 'white',
     	width: 840
 	},
 	menuCategory:{
-		fontSize: 20,
+		fontSize: 22,
 		fontFamily: 'Rock Salt',
     	color: 'white'
 	}
@@ -122,11 +126,16 @@ class App extends React.Component {
       				<div style={styles.leftPhotos}></div>
       				<div style={styles.menuBlock}>
       					<span style={styles.menuCategory}> Our Delectable Array of Cakes </span>
+      					<ul>
       					{this.state.menu.map(function(cake){
       						return (
-							<div key={cake.id} style={styles.menuText}>{cake.description}</div>
+      						<div>
+      						<li key={'item' + cake.id} style={styles.menuItem}>{cake.item}</li>
+							<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+							</div>
 							)
       					})}
+      					</ul>
       				</div>
       				<div style={styles.rightPhotos}></div>
       			</div>

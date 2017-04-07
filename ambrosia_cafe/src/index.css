@@ -23,3 +23,7 @@ body {
 button:focus{
 	outline: 0;
 }
+ul{
+	list-style: none;
+	text-align: left;
+}

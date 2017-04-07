@@ -4,7 +4,7 @@ import {getMenu} from '../api/menu'
 
 const styles = {
     container:{
-      background: '#233743',
+      background: 'linear-gradient(  #031723 ,#233743)'
     }, 
   storyText:{
   		width: 640,

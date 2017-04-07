@@ -63,5 +63,13 @@ li span{
   float: left;
 }
 .rightPhotos:{
-    float: right;
+  float: right;
+}
+.menuLeftImage{
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.menuRightImage{
+  float: left;  
 }

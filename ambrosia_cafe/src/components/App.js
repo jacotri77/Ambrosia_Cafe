@@ -24,20 +24,6 @@ const styles = {
 		padding: 0,
 		backgroundColor: '#233743'
 	},
-	leftPhotos:{
-		height:"100%",
-		width:300,
-		background: 'purple',
-		display: 'inline-block',
-		float: 'left'
-	},
-	rightPhotos:{
-		height:"100%",
-		width:300,
-		background: 'pink',
-		display: 'inline-block',
-		float: 'right'
-	},
 	storyText:{
 		fontSize: 14,
 		display: 'inline-block',
@@ -102,7 +88,7 @@ class App extends React.Component {
 	}
 	componentWillMount() {
     	this.unsubscribe = store.subscribe(()=>{
-      		const appState = store.getState().menuReducer.menu
+      		const appState = store.getState().menuReducer.menu.cakes
 		
 			this.setState({
         		menu: appState
@@ -119,24 +105,24 @@ class App extends React.Component {
       		<div  style={styles.acc}>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"storyOpener"}> Story</button>
       			<div style={styles.story} className="w3-hide w3-btn w3-block" ref="storyOpener">
-      				<div style={styles.leftPhotos}></div>
+      				<div className="leftPhotos"></div>
       				<p style={styles.storyText}>Block of Text from API for Story |  Block of Text from API for Story </p>
-      				<div style={styles.rightPhotos}></div>
+      				<div className="rightPhotos"></div>
       			</div>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"menuOpener"}> Menu</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.menu} ref="menuOpener">
-      				<div style={styles.leftPhotos}><img src="../assets/cakes/RedVelvet540w800h.jpg"/></div>
+      				<div className="leftPhotos"><img className="menuLeftImage" src={require("../assets/cakes/RedVelvetTall2.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/OreoTall.jpeg")} alt="No Error"/></div>
       				<div style={styles.menuBlock}>
       					<span style={styles.menuCategory}> Our Delectable Array of Cakes </span>
       					<ul>
       					{this.state.menu.map(function(cake){
       						return (
-      							<div>
+      							<div key={cake.id} >
       								<li>
      									<div className='dots' key={'item' + cake.id} ></div>    
     									 <label>{cake.item}</label><span>{cake.price}</span>
 									</li>
-									<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+									<li style={styles.menuDescription}>{cake.description}</li>
 								</div>
 							)
       					})}
@@ -145,12 +131,12 @@ class App extends React.Component {
       					<ul>
       					{this.state.menu.map(function(cake){
       						return (
-      							<div>
+      							<div key={cake.id}>
       								<li>
      									<div className='dots' key={'item' + cake.id} ></div>    
     									 <label>{cake.item}</label><span>{cake.price}</span>
 									</li>
-									<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+									<li  style={styles.menuDescription}>{cake.description}</li>
 								</div>
 							)
       					})}
@@ -159,24 +145,24 @@ class App extends React.Component {
       					<ul>
       					{this.state.menu.map(function(cake){
       						return (
-      							<div>
+      							<div key={cake.id}>
       								<li>
      									<div className='dots' key={'item' + cake.id} ></div>    
     									 <label>{cake.item}</label><span>{cake.price}</span>
 									</li>
-									<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+									<li  style={styles.menuDescription}>{cake.description}</li>
 								</div>
 							)
       					})}
       					</ul>
       				</div>
-      				<div style={styles.rightPhotos}><img src="../assets/cakes/PBCheesecake600w800h.jpg"/></div>
+      				<div className="rightPhotos" ><img className="menuRightImage" src={require('../assets/cakes/PBTall.jpeg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/DCTall.jpeg')} alt="No Error"/></div>
       			</div>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"reservationsOpener"}> Reservations</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.reservations} ref="reservationsOpener"> 
-      				<div style={styles.leftPhotos}></div>
+      				<div className="leftPhotos"></div>
       				<p style={styles.reservationForm}> Rervations Form | Reservations Form | Reservations Form </p>
-      				<div style={styles.rightPhotos}></div>
+      				<div className="rightPhotos"></div>
       			</div>
       		</div>
     	)

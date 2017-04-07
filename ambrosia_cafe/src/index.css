@@ -12,8 +12,8 @@ body {
 .accSection{
 	width:1440px;
 	height:48px;
-	border:2px solid #A90000;
-	background: #D30000;
+	border:2px solid purple;
+	background: linear-gradient( #435763, #031723);
 	text-align: center;
 	line-height: 46px;
 	font-size: 30px;
@@ -54,16 +54,12 @@ li span{
    color: white;
 }
 .leftPhotos, .rightPhotos{
-    height: 100%;
     width: 300px;
-    background: purple;
     display: inline-block;
+    background: #233743;
 }
 .leftPhotos{   
   float: left;
-}
-.rightPhotos:{
-  float: right;
 }
 .menuLeftImage{
   display:flex;

@@ -4,14 +4,35 @@ import {getMenu} from '../api/menu'
 
 const styles = { 
   storyText:{
-  	width: 840,
-    height: 300,
-    display:'inline-block',
-    padding:'20px 25px 10px 25px',
-    textOverflow: 'initial',
-    whiteSpace: 'normal',
-    overflow: 'auto',
-  }
+  		width: 640,
+    	height: 475,
+    	display:'inline-block',
+    	padding:'0 25px',
+    	textOverflow: 'initial',
+    	whiteSpace: 'normal',
+    	overflow: 'auto',
+    	fontSize: 20,
+    	background: 'white'
+  	},
+  	leftPhotos:{
+  		float: 'left',
+  		width: 400,
+    	display: 'inline-block',
+    	background: '#233743',
+    },
+    leftPhoto:{
+    	maxWidth:'100%',
+    	display:'flex',
+  		flexWrap: 'wrap'
+  	},
+  	rightPhotos:{
+    	width: 400,
+    	display: 'inline-block',
+    	background: 'white'
+    },
+    rightPhoto:{
+    	float: 'left'
+	}
 }
 
 class StorySection extends React.Component {
@@ -34,9 +55,9 @@ class StorySection extends React.Component {
   render() {
     return (
       <div>
-        <div className="leftPhotos">IMAGES STACK IN HERE</div>
+        <div style={styles.leftPhotos}><img src={require('../assets/cakes/DCFudgeWide.jpg')} alt="No Error"/><img style={styles.leftPhoto} src={require('../assets/cakes/RedVelvetSquare.jpeg')} alt="No Error"/></div>
       		<div style={styles.storyText}>{this.state.story} </div>
-      	<div className="rightPhotos">IMAGES STACK IN HERE</div>
+      	<div style={styles.rightPhotos}><img src={require('../assets/cakes/OreoCakeSquare.jpg')} alt="No Error"/></div>
       </div>
     )
   }

@@ -11,9 +11,6 @@ const styles = {
   }
 }
 class Accordion extends React.Component {
-		constructor() {
-    	super()
-  	}
   	handleAcc = (e) => {
   		if (this.refs[e.target.value].className.indexOf("w3-show") === -1){
 			this.refs.storyOpener.className = this.refs.storyOpener.className.replace (" w3-show", "")

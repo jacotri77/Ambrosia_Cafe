@@ -13,10 +13,10 @@ const styles = {
 		backgroundColor: '#233743'
 	},
 	menu:{
-		height: 900,
+		height: 1440,
 		width: 1440,
 		padding: 0,
-		backgroundColor: '#233743',
+		//backgroundColor:'#233743',
 	},
 	reservations:{
 		height: 300,
@@ -49,12 +49,11 @@ const styles = {
 		width: 840,
 		height:300,
 		display:'inline-block',
-		padding:'10px, 20px',
+		padding:'20px 25px 10px 25px',
 	},
 	menuDescription:{
 		fontSize: 12,
 		fontFamily: 'Rock Salt',
-    	color: 'white',
     	width: 750,
     	margin: '10px',
     	overflow: 'hidden',
@@ -65,7 +64,6 @@ const styles = {
 	menuItem:{
 		fontSize: 16,
 		fontFamily: 'Rock Salt',
-    	color: 'white',
     	width: 400,
     	margin: '10px'
 	},
@@ -79,7 +77,12 @@ const styles = {
 	menuCategory:{
 		fontSize: 22,
 		fontFamily: 'Rock Salt',
-    	color: 'white'
+		border: 'solid black 2px',
+		width: '100%',
+		display: 'inline-block',
+		borderWidth: '0 0 2px 0',
+		paddingBottom: 4,
+		textAlign: 'left'
 	}
 }
 class App extends React.Component {
@@ -129,10 +132,13 @@ class App extends React.Component {
       					<ul>
       					{this.state.menu.map(function(cake){
       						return (
-      						<div>
-      						<li key={'item' + cake.id} style={styles.menuItem}>{cake.item}</li>
-							<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
-							</div>
+      							<div>
+      								<li>
+     									<div className='dots' key={'item' + cake.id} ></div>    
+    									 <label>{cake.item}</label><span>{cake.price}</span>
+									</li>
+									<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+								</div>
 							)
       					})}
       					</ul>

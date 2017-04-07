@@ -26,4 +26,30 @@ button:focus{
 ul{
 	list-style: none;
 	text-align: left;
+	padding: 0;
+}
+li{
+   list-style:none;    
+   overflow:hidden;
+   padding:5px 0;
+   position:relative;
+}
+li label{
+   float:left;
+   background:#fff;
+   padding-right:10px;
+}
+li span{
+   float:right;
+   background:#fff;
+   padding-left:10px;
+}
+.dots{
+   border-top:dotted 4px red;
+   position:absolute;   
+   top:15px;
+   left:0;
+   width:100%;
+   z-index:-1;
+   color: white;
 }

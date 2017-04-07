@@ -8,17 +8,19 @@
 			"favorite": "",
 			"spicy": "",
 			"vegan": "0",
-			"photoUrl": "" 
+			"photoUrl": "",
+			"price": "21.60" 
 		},
 		{
 			"id": 2,
-			"item": "",
+			"item": "Chocolate Peanut Butter Cheesecake",
 			"description": "Oreo crust, creamy peanut butter cheesecake filling loaded with chocolate chips, milk chocolate ganache with a pile of chopped Reese’s cups on top. Believe it or not this entry tastes even better than it looks.",
 			"allergies": "",
 			"favorite": "",
 			"spicy": "",
 			"vegan": "0",
-			"photoUrl": ""
+			"photoUrl": "",
+			"price": "20.20" 
 		},
 		{
 			"id": 3,
@@ -28,17 +30,19 @@
 			"favorite": "",
 			"spicy": "",
 			"vegan": "0",
-			"photoUrl" : "" 
+			"photoUrl" : "",
+			"price": "22.10"  
 		},
 		{
 			"id": 4,
-			"item": "Chocalate Oreo Cake",
+			"item": "Oreo Cake",
 			"description": "This Chocolate Oreo Cake is to die for! A moist chocolate cake full of Oreo icing FULL of crushed up Oreos. An absolutely stunning cake dream realized for your feasting pleasure.",
 			"allergies": "",
 			"favorite": "",
 			"spicy": "",
 			"vegan": "",
-			"photoUrl" : "" 
+			"photoUrl" : "",
+			"price": "17.50"  
 		}
 	]
 }

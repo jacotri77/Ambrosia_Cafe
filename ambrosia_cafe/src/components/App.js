@@ -56,7 +56,6 @@ const styles = {
 		fontFamily: 'Rock Salt',
     	width: 750,
     	margin: '10px',
-    	overflow: 'hidden',
     	textOverflow: 'initial',
     	whiteSpace: 'normal',
     	overflow: 'auto'
@@ -126,7 +125,7 @@ class App extends React.Component {
       			</div>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"menuOpener"}> Menu</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.menu} ref="menuOpener">
-      				<div style={styles.leftPhotos}></div>
+      				<div style={styles.leftPhotos}><img src="../assets/cakes/RedVelvet540w800h.jpg"/></div>
       				<div style={styles.menuBlock}>
       					<span style={styles.menuCategory}> Our Delectable Array of Cakes </span>
       					<ul>
@@ -142,8 +141,36 @@ class App extends React.Component {
 							)
       					})}
       					</ul>
+      					<span style={styles.menuCategory}> Our Heavenly Crepe Collection </span>
+      					<ul>
+      					{this.state.menu.map(function(cake){
+      						return (
+      							<div>
+      								<li>
+     									<div className='dots' key={'item' + cake.id} ></div>    
+    									 <label>{cake.item}</label><span>{cake.price}</span>
+									</li>
+									<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+								</div>
+							)
+      					})}
+      					</ul>
+      					<span style={styles.menuCategory}> Our Exquisite Selection of Brownies </span>
+      					<ul>
+      					{this.state.menu.map(function(cake){
+      						return (
+      							<div>
+      								<li>
+     									<div className='dots' key={'item' + cake.id} ></div>    
+    									 <label>{cake.item}</label><span>{cake.price}</span>
+									</li>
+									<li key={cake.id} style={styles.menuDescription}>{cake.description}</li>
+								</div>
+							)
+      					})}
+      					</ul>
       				</div>
-      				<div style={styles.rightPhotos}></div>
+      				<div style={styles.rightPhotos}><img src="../assets/cakes/PBCheesecake600w800h.jpg"/></div>
       			</div>
       			<button type="button" className='accSection' onClick={this.handleAcc} value={"reservationsOpener"}> Reservations</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.reservations} ref="reservationsOpener"> 

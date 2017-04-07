@@ -2,17 +2,19 @@ import React from 'react'
 import store from '../store'
 import {getMenu} from '../api/menu'
 
-const styles = { 
+const styles = {
+    container:{
+      background: '#233743',
+    }, 
   storyText:{
   		width: 640,
     	height: 475,
     	display:'inline-block',
-    	padding:'0 25px',
+    	padding: '0 5px',
     	textOverflow: 'initial',
     	whiteSpace: 'normal',
     	overflow: 'auto',
-    	fontSize: 20,
-    	background: 'white'
+    	fontSize: 18
   	},
   	leftPhotos:{
   		float: 'left',
@@ -54,7 +56,7 @@ class StorySection extends React.Component {
     }
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <div style={styles.leftPhotos}><img src={require('../assets/cakes/DCFudgeWide.jpg')} alt="No Error"/><img style={styles.leftPhoto} src={require('../assets/cakes/RedVelvetSquare.jpeg')} alt="No Error"/></div>
       		<div style={styles.storyText}>{this.state.story} </div>
       	<div style={styles.rightPhotos}><img src={require('../assets/cakes/OreoCakeSquare.jpg')} alt="No Error"/></div>

@@ -3,9 +3,6 @@ import store from '../store'
 import {getMenu} from '../api/menu'
 
 const styles = {
-  container:{
-
-  },
   menuBlock:{
     width: 840,
     height: 300,
@@ -42,6 +39,10 @@ const styles = {
   },
   lastUl:{
     marginBottom: 0
+  },
+  itemPrice:{
+    fontFamily: 'serif',
+    color: 'black'
   }
 }
 class MenuSection extends React.Component {
@@ -74,7 +75,7 @@ class MenuSection extends React.Component {
                 <div key={cake.id} >
                   <li>
                     <div className='dots' key={'item' + cake.id} ></div>    
-                    <label>{cake.item}</label><span>{cake.price}</span>
+                    <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                   </li>
                   <li style={styles.menuDescription}>{cake.description}</li>
                 </div>
@@ -88,7 +89,7 @@ class MenuSection extends React.Component {
                   <div key={cake.id}>
                     <li>
                       <div className='dots' key={'item' + cake.id} ></div>    
-                      <label>{cake.item}</label><span>{cake.price}</span>
+                      <label style={styles.itemPrice} >{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                     </li>
                     <li  style={styles.menuDescription}>{cake.description}</li>
                   </div>
@@ -102,7 +103,7 @@ class MenuSection extends React.Component {
                     <div key={cake.id}>
                       <li>
                         <div className='dots' key={'item' + cake.id} ></div>    
-                        <label>{cake.item}</label><span>{cake.price}</span>
+                        <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                       </li>
                       <li  style={styles.menuDescription}>{cake.description}</li>
                     </div>

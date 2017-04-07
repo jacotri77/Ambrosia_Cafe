@@ -1,6 +1,6 @@
 import React from 'react'
-import MenuSection from './MenuSection'
-import StorySection from './StorySection'
+import MenuSection from './menuSection'
+import StorySection from './storySection'
 
 const styles = {
 	acc:{

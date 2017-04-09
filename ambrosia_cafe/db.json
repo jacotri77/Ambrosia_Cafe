@@ -60,35 +60,35 @@
 		{
 			"id": 6,
 			"item": "Death by Fudge",
-			"description": "Very similar to our Chocolate Amazeballs, these brownies dont contain nuts, and instead we add more fudge and topped with some fresh berries",
+			"description": "Very similar to our Chocolate Amazeballs, these brownies dont contain nuts, and instead we add more fudge and topped with some fresh berries.",
 			"allergies": "Those allerigc to chocolate should avoid this item.",
 			"favorite": "This is guaranteed to become a fudge lover's favorite.",
-			"spicy": "We recommend vanialla or rocky road ice cream with this desset.",
+			"spicy": "We recommend vanilla or rocky road ice cream with this dessert.",
 			"vegan": "",
 			"photoUrl": "https://unsplash.com/search/brownies?photo=toxlLueLNDs",
 			"price": "13.20"
 		},
 		{
 			"id": 7,
-			"item": "",
-			"description": "",
-			"allergies": "",
+			"item": "PB & Chocolate",
+			"description": "The perfect marraige of peanuts, sugar, and chocolate.  If you are a Reese’s fan, these are the brownies for you!",
+			"allergies": "Those allergic to nuts or chocolate should avoid this item",
 			"favorite": "",
 			"spicy": "",
 			"vegan": "",
-			"photoUrl" : "",
-			"price": "" 
+			"photoUrl" : "http://sweetpeaskitchen.com/wp-content/uploads/2013/08/Buckeye-Brownies2.jpg",
+			"price": "12.75" 
 		},
 		{
 			"id": 8,
-			"item": "",
-			"description": "",
-			"allergies": "",
+			"item": "Mint Chocolate Fudge Brownies",
+			"description": "This is a mint lover's dream come true.  Copious amounts of fudge and chocolate sauce offset with the cripsness of fresh mint taste.  The perfect way to end an evening.",
+			"allergies": "Those allergic to chocolate should avoid this item.",
 			"favorite": "",
-			"spicy": "",
+			"spicy": "We recommend pairing this with a nice port or coffee.",
 			"vegan": "",
-			"photoUrl" : "",
-			"price": ""
+			"photoUrl" : "https://s-media-cache-ak0.pinimg.com/736x/69/63/ba/6963ba825812ec4ddc87fa761db1497c.jpg",
+			"price": "14.50"
 		}
 	],
 	"crepes": [

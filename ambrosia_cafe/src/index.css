@@ -183,3 +183,39 @@ li span{
 .menuRightImage{
   float: left;  
 }
+.fa{
+    position: relative;
+    display: inline-block;
+}
+.fa .tooltiptext {
+    visibility: hidden;
+    background-color: #233743;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+ 	font-size: 12px;
+    width: 240px;
+    height: 100px;
+    top: 100%;
+    left: 50%; 
+    margin-left: -100px; /* Use half the width */
+    position: absolute;
+    z-index: 2;
+    text-overflow: initial;
+    white-space: normal;
+    overflow: auto;
+}
+.fa:hover .tooltiptext {
+    visibility: visible;
+}
+.fa .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #233743 transparent;
+}

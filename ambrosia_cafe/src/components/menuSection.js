@@ -12,7 +12,7 @@ const styles = {
     width: 840,
     height: 300,
     position: 'relative',
-    top: '-230px',
+    top: '-250px',
     display:'inline-block',
     padding:'20px 25px 10px 25px',
   },
@@ -91,15 +91,17 @@ const styles = {
 class MenuSection extends React.Component {
   constructor() {
     super()
-    this.state = {menu: [] , menu2: []}
+    this.state = {menu: [] , menu2: [], menu3: []}
   }
   componentWillMount() {
       this.unsubscribe = store.subscribe(()=>{
           const appState = store.getState().menuReducer.menu.cakes
-          //const appState2 = store.getState().menuReducer.menu.Brownies
+          const appState2 = store.getState().menuReducer.menu.Brownies
+          const appState3 = store.getState().menuReducer.menu.crepes
       this.setState({
-            menu: appState
-            //menu2: appState2
+            menu: appState,
+            menu2: appState2,
+            menu3: appState3
           })
       })
       getMenu()
@@ -110,7 +112,7 @@ class MenuSection extends React.Component {
   render() {
     return (
       <div style={styles.container}>
-        <div className="leftPhotos"><img className="menuLeftImage" src={require("../assets/cakes/RedVelvetTall2.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/OreoTall.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/DCTall.jpeg")} alt="No Error"/></div>
+        <div className="leftPhotos"><img className="menuLeftImage" src={require("../assets/cakes/RedVelvetTall2.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/OreoTall.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/BrownieSquare.jpg")} alt="No Error"/></div>
           <div style={styles.menuBlock}>
             <span style={styles.menuCategory}> Our Delectable Array of Cakes </span>
             <ul>
@@ -126,9 +128,9 @@ class MenuSection extends React.Component {
               )
             })}
             </ul>
-            <span style={styles.menuCategory}> Our Heavenly Crepe Collection </span>
+            <span style={styles.menuCategory}> Our Exquisite Selection of Brownies  </span>
             <ul>
-              {this.state.menu.map(function(cake){
+              {this.state.menu2.map(function(cake){
                 return (
                   <div key={cake.id}>
                     <li>
@@ -140,9 +142,9 @@ class MenuSection extends React.Component {
                 )
               })}
               </ul>
-              <span style={styles.menuCategory}> Our Exquisite Selection of Brownies </span>
+              <span style={styles.menuCategory}>Our Heavenly Crepe Collection</span>
               <ul style={styles.lastUl}>
-                {this.state.menu.map(function(cake){
+                {this.state.menu3.map(function(cake){
                   return (
                     <div key={cake.id}>
                       <li>
@@ -155,7 +157,7 @@ class MenuSection extends React.Component {
                 })}
               </ul>
           </div>
-        <div className="rightPhotos" ><img className="menuRightImage" src={require('../assets/cakes/PBTall.jpeg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/BrownieWide.jpg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/BrownieSquare.jpg')} alt="No Error"/></div>
+        <div className="rightPhotos" ><img className="menuRightImage" src={require('../assets/cakes/PBTall.jpeg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/BrownieWide.jpg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/PBCheesecakeWide.jpg')} alt="No Error"/></div>
       </div>
     )
   }

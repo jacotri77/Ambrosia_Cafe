@@ -45,8 +45,98 @@
 			"price": "17.50"  
 		}
 	],
-	
-	
+	"Brownies": [
+		{
+			"id": 5,
+			"item":	"Chocolate Amazeballs",
+			"description": "Our take on the classic chocolate but with a few twists.  If you love fudge, chocolate and walnuts this is the dessert for you!",
+			"allergies": "Those allergic to chocolate should avoid this item.",
+			"favorite": "This is a unique and delicious dish, a cafe speciality.",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl":  "https://unsplash.com/search/desserts?photo=WPRuXYLNY68",
+			"price" : "12.50"
+		},
+		{
+			"id": 6,
+			"item": "Death by Fudge",
+			"description": "Very similar to our Chocolate Amazeballs, these brownies dont contain nuts, and instead we add more fudge and topped with some fresh berries",
+			"allergies": "Those allerigc to chocolate should avoid this item.",
+			"favorite": "This is guaranteed to become a fudge lover's favorite.",
+			"spicy": "We recommend vanialla or rocky road ice cream with this desset.",
+			"vegan": "",
+			"photoUrl": "https://unsplash.com/search/brownies?photo=toxlLueLNDs",
+			"price": "13.20"
+		},
+		{
+			"id": 7,
+			"item": "",
+			"description": "",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl" : "",
+			"price": "" 
+		},
+		{
+			"id": 8,
+			"item": "",
+			"description": "",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl" : "",
+			"price": ""
+		}
+	],
+	"crepes": [
+		{
+			"id": 9,
+			"item":	"Classic Crepe",
+			"description": " This entry may seem simple but our experienced pastry chefs bring on the magic with their attention to detail and practiced preperation.",
+			"allergies": "",
+			"favorite": "We recommend this dish to new comers to the crepe. A base for future crepe exploration!",
+			"spicy": "",
+			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
+			"photoUrl": "",
+			"price":  "13.50"
+		},
+		{
+			"id": 10,
+			"item": "Fruit Crepe",
+			"description": "This is our classic crepe accompanied by an assortment of fruits of your choosing. All seasonal fruits available fresh.",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "We recommend vanilla ice cream or our papaya lime sorbet.",
+			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
+			"photoUrl": "",
+			"price": "11.40" 
+		},
+		{
+		"id": 11,
+		"item": "Nutella Crepe",
+			"description": "Nutella (hazelnut and chocolate whipped into a luscious creamy spread) is slathered on to this cutting-edge crepe",
+			"allergies": "Those allergic to peanuts should avoid this dish.",
+			"favorite": "",
+			"spicy": "We recommend chocolate or cookie dough ice cream.",
+			"vegan": "",
+			"photoUrl": "",
+			"price": "9.90"  
+		},
+		{
+			"id": 12,
+			"item": "Drowned Crepe",
+			"description": "This crepe comes alive in a pool of choclate and syrup. Dive into this lovely crepe oasis. Comes topped with a halo of whipped cream.",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl": "",
+			"price": "14.55"  
+		}
+	],
 	"story": {
 		"text": "So you've been dreaming of a place where you can skip the main course and go right to the good stuff? You can stop dreaming. It's already here and it is called Ambrosia Cafe located at 1112 S Casino Center Blvd. We are all about the desserts, everything here is unapologetically sweet. You would expect a sweet spot like this to feature cookies, coffee, candy and ice cream, but it is our carefully constructed confections covered in fudge, ganache, chocolate chips and buttercream that keeps the customers coming back. The most difficult challenge at the Ambrosia Cafe is trying to make up your mind because the menu boasts the most appetizing looking desserts in the city guaranteed to taste as good as they look. We have been dishing up this dizzying array of delicious desserts for about a year. You might want to check it out, but heed our warning if you're looking to diet don't come here-we have a lot of calories!"
 	}

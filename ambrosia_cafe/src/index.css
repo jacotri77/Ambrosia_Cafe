@@ -13,8 +13,6 @@ body {
 	font-family: 'Rock Salt', cursive;
 	font-weight: normal;
 	color:white;
-	
-
 }
 
 .logoDiv{
@@ -37,17 +35,13 @@ body {
 }
 
 .social{
+	display: flex;
+	justify-content: flex-end;
 	height: 60px;
-	display: inline-block;
-	float:right;
+	width:32%;
+	height:100px;
 	list-style: none;
-
-}
-
-.social{
-	width:35%;
-	height:60px;
-	line-height: 100px;
+	
 }
 
 .social .fa{
@@ -96,12 +90,18 @@ body {
 }
 
 .commentsDiv{
-
 	height:250px;
 	width:1440px;
 	border: 2px solid #233743;
 	margin: 20px auto;
 	background-color: #233743;
+}
+
+#reservationsForm{
+	width:50%;
+	height:250px;
+	display: flex;
+	justify-content: space-around;
 }
 
 #commentBox{
@@ -112,15 +112,33 @@ body {
 	outline:2px solid #5c1f0d;
 	border:0px;
 	font-size: 18px;
+	color:#233743;
 }
+
+#commentBoxDiv{
+	display: flex;
+	justify-content: space-around;
+	height: 200px;
+	width:350px;
+
+}
+
 #textBox{
-	display: block;
 	height:40px;
 	width: 350px;
 	margin: 10px 0px 0px 20px;
 	outline: 2px solid #5c1f0d;
 	border:0px;
 	font-size: 18px;
+	color:#233743;
+}
+#inputTextDiv{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	height: 200px;
+	width: 350px;
+	
 }
 .accSection{
 	width:1440px;

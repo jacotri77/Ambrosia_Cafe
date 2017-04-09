@@ -33,7 +33,7 @@ const styles = {
     fontSize: 28,
     fontFamily: 'Rock Salt',
     color: '#233743',
-    border: 'solid black 2px',
+    border: 'solid #5c1f0d 2px',
     width: '100%',
     display: 'inline-block',
     borderWidth: '0 0 2px 0',

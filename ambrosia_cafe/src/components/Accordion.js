@@ -25,7 +25,7 @@ class Accordion extends React.Component {
   	render() {
   		
     	return (
-      		<div style={styles.acc}>
+      		<div style={styles.acc} id="accArea">
       			
             <button type="button" className='accSection' onClick={this.handleAcc} value={"storyOpener"}> Story</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.opener} ref="storyOpener">

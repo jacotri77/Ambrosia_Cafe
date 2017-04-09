@@ -11,6 +11,8 @@ const styles = {
   menuBlock:{
     width: 840,
     height: 300,
+    position: 'relative',
+    top: '-230px',
     display:'inline-block',
     padding:'20px 25px 10px 25px',
   },
@@ -21,14 +23,14 @@ const styles = {
     overflow: 'visible'
   },
   menuItem:{
-    fontSize: 16,
+    fontSize: 22,
     fontFamily: 'Rock Salt',
     color: '#233743',
     width: 400,
     margin: '10px'
   },
   menuCategory:{
-    fontSize: 22,
+    fontSize: 28,
     fontFamily: 'Rock Salt',
     color: '#233743',
     border: 'solid black 2px',
@@ -42,6 +44,7 @@ const styles = {
     marginBottom: 0
   },
   itemPrice:{
+    fontsize: 24,
     fontFamily: 'serif',
     color: 'black'
   },
@@ -67,18 +70,18 @@ const styles = {
   },
   icon:{                  //for applicable icons, red
     color: '#B1051D',
-    fontSize: 23,
+    fontSize: 24,
     marginLeft: 7
   },                       //for non applicable grey
   iconOff:{
     display: 'none',
-    fontsize: 23,
+    fontsize: 24,
   },
   ttTextHeader:{
     textAlign: 'center',
     background: '#233743',
     fontFamily: 'sans serif',
-    fontSize: 20,
+    fontSize: 22,
     margin: '0 0 10px 0',
     width:220,
     border: '2px solid #B1051D',
@@ -107,7 +110,7 @@ class MenuSection extends React.Component {
   render() {
     return (
       <div style={styles.container}>
-        <div className="leftPhotos"><img className="menuLeftImage" src={require("../assets/cakes/RedVelvetTall2.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/OreoTall.jpeg")} alt="No Error"/></div>
+        <div className="leftPhotos"><img className="menuLeftImage" src={require("../assets/cakes/RedVelvetTall2.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/OreoTall.jpeg")} alt="No Error"/><img className="menuLeftImage" src={require("../assets/cakes/DCTall.jpeg")} alt="No Error"/></div>
           <div style={styles.menuBlock}>
             <span style={styles.menuCategory}> Our Delectable Array of Cakes </span>
             <ul>
@@ -152,7 +155,7 @@ class MenuSection extends React.Component {
                 })}
               </ul>
           </div>
-        <div className="rightPhotos" ><img className="menuRightImage" src={require('../assets/cakes/PBTall.jpeg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/DCTall.jpeg')} alt="No Error"/></div>
+        <div className="rightPhotos" ><img className="menuRightImage" src={require('../assets/cakes/PBTall.jpeg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/BrownieWide.jpg')} alt="No Error"/><img className="menuRightImage" src={require('../assets/cakes/BrownieSquare.jpg')} alt="No Error"/></div>
       </div>
     )
   }

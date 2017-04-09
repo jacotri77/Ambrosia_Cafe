@@ -4,13 +4,14 @@ import InteriorImages from './interiorImages'
 import Accordion from './Accordion'
 import TripleBox from './TripleBox'
 import Comments from './Comments'
+
+class App extends React.Component {
+
 // import backgroundImage from '../images/backgroundImage.jpg'
 
 // var styles= {
 // 	backgroundImage: `url(${backgroundImage})`
 // }
-
-export default React.createClass({
   render() {
     return (
     	 <div >
@@ -22,5 +23,6 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
 
+export default App

@@ -10,14 +10,9 @@ const styles = {
     padding:'20px 25px 10px 25px',
   },
   menuDescription:{
-    fontSize: 12,
-    fontFamily: 'Rock Salt',
-    color: '#233743',
     width: 750,
+    height: 70,
     margin: '10px',
-    textOverflow: 'initial',
-    whiteSpace: 'normal',
-    overflow: 'auto',
   },
   menuItem:{
     fontSize: 16,
@@ -43,6 +38,24 @@ const styles = {
   itemPrice:{
     fontFamily: 'serif',
     color: 'black'
+  },
+  beforeIcons:{
+    width:'85%',
+    display: 'inline-block',fontSize: 12,
+    fontFamily: 'Rock Salt',
+    color: '#233743',
+    textOverflow: 'initial',
+    whiteSpace: 'normal',
+    overflow: 'auto',
+    padding: ' 5px 10px 0 0'
+  },
+  icons:{
+    width:'15%',
+    height:'100%',
+    float:'right',
+    display: 'inline-block',
+    border: 'solid 1px #B1051D',
+    borderWidth: '0 0 0 2px',
   }
 }
 class MenuSection extends React.Component {
@@ -77,7 +90,7 @@ class MenuSection extends React.Component {
                     <div className='dots' key={'item' + cake.id} ></div>    
                     <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                   </li>
-                  <li style={styles.menuDescription}>{cake.description}</li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}></div></li>
                 </div>
               )
             })}
@@ -91,7 +104,7 @@ class MenuSection extends React.Component {
                       <div className='dots' key={'item' + cake.id} ></div>    
                       <label style={styles.itemPrice} >{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                     </li>
-                    <li  style={styles.menuDescription}>{cake.description}</li>
+                      <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}></div></li>
                   </div>
                 )
               })}
@@ -105,7 +118,7 @@ class MenuSection extends React.Component {
                         <div className='dots' key={'item' + cake.id} ></div>    
                         <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                       </li>
-                      <li  style={styles.menuDescription}>{cake.description}</li>
+                        <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}></div></li>
                     </div>
                   )
                 })}

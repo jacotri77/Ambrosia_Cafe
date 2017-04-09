@@ -159,7 +159,7 @@ li span{
    padding-left:10px;
 }
 .dots{
-   border-top:dotted 4px red;
+   border-top:dotted 4px #B1051D;
    position:absolute;   
    top:15px;
    left:0;

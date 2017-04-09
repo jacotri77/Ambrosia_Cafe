@@ -87,7 +87,8 @@ html {
 }
 
 .commentsDiv{
-	height:250px;
+	display: flex;
+	height:300px;
 	width:1440px;
 	border: 2px solid #233743;
 	margin: 20px auto;
@@ -95,14 +96,17 @@ html {
 }
 
 #reservationsForm{
-	width:50%;
-	height:250px;
+	width:60%;
+	height:300px;
 	display: flex;
 	justify-content: space-around;
+	
 }
 
 #commentBox{
-	height: 125px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 200px;
 	width:350px;
 	resize:none;
 	margin: 10px 0px 0px 20px;
@@ -114,14 +118,15 @@ html {
 
 #commentBoxDiv{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
-	height: 200px;
+	height: 300px;
 	width:350px;
 
 }
 
 #textBox{
-	height:40px;
+	height:50px;
 	width: 350px;
 	margin: 10px 0px 0px 20px;
 	outline: 2px solid #5c1f0d;
@@ -133,7 +138,19 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	height: 200px;
+	height: 300px;
 	width: 350px;
 	
+}
+
+#subButton{
+	display: flex;
+	flex-wrap: wrap;
+	height:50px;
+	width:350px;
+	outline: 2px solid #5c1f0d;
+	border:0px;
+	font-size: 18px;
+	color:#233743;
+	margin: 10px 0px 0px 20px;
 }

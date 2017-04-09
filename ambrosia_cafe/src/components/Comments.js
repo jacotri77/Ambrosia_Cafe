@@ -16,7 +16,9 @@ render(){
 				</div>
 				<div id="commentBoxDiv">
 					<input type="textarea" placeholder="Comments" id="commentBox"/>
-				</div>
+				
+				<button id="subButton">Submit</button>	
+			</div>
 			</form>
 			<div className="social">
 				<i className="fa fa-facebook-official fa-4x" aria-hidden="true"></i>

@@ -2,6 +2,7 @@ import React from 'react'
 import store from '../store'
 import {getMenu} from '../api/menu'
 import '../../node_modules/font-awesome/css/font-awesome.css'
+import '../menu.css'
 
 const styles = {
   container:{
@@ -87,14 +88,15 @@ const styles = {
 class MenuSection extends React.Component {
   constructor() {
     super()
-    this.state = {menu: []}
+    this.state = {menu: [] , menu2: []}
   }
   componentWillMount() {
       this.unsubscribe = store.subscribe(()=>{
           const appState = store.getState().menuReducer.menu.cakes
-    
+          //const appState2 = store.getState().menuReducer.menu.Brownies
       this.setState({
             menu: appState
+            //menu2: appState2
           })
       })
       getMenu()

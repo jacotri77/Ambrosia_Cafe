@@ -1,6 +1,7 @@
 import React from 'react'
 import store from '../store'
 import {getMenu} from '../api/menu'
+import '../../node_modules/font-awesome/css/font-awesome.css'
 
 const styles = {
   menuBlock:{
@@ -10,9 +11,9 @@ const styles = {
     padding:'20px 25px 10px 25px',
   },
   menuDescription:{
-    width: 750,
+    width: 800,
     height: 70,
-    margin: '10px',
+    margin: '10px 0 5px 5px',
   },
   menuItem:{
     fontSize: 16,
@@ -56,6 +57,12 @@ const styles = {
     display: 'inline-block',
     border: 'solid 1px #B1051D',
     borderWidth: '0 0 0 2px',
+    color: '#233743'
+  },
+  icon:{
+    color: '#233743',
+    fontSize: 23,
+    marginLeft: 7
   }
 }
 class MenuSection extends React.Component {
@@ -90,7 +97,7 @@ class MenuSection extends React.Component {
                     <div className='dots' key={'item' + cake.id} ></div>    
                     <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                   </li>
-                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i></div></li>
                 </div>
               )
             })}

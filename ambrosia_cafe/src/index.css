@@ -1,11 +1,14 @@
 html {
 	box-sizing: border-box;
 }
-
-*, *:before, *:after{
+*, *:before, *:after {
 	box-sizing: inherit;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 *{
 	font-family: 'Rock Salt', cursive;
 	font-weight: normal;
@@ -143,6 +146,7 @@ html {
 	
 }
 
+
 #subButton{
 	display: flex;
 	flex-wrap: wrap;
@@ -153,4 +157,20 @@ html {
 	font-size: 18px;
 	color:#233743;
 	margin: 10px 0px 0px 20px;
+
+.accSection{
+	width:1440px;
+	height:48px;
+	border:2px solid purple;
+	background: linear-gradient( #435763, #031723);
+	text-align: center;
+	line-height: 46px;
+	font-size: 30px;
+	color: white;
+	margin: 0;
+  font-family: 'Rock Salt';
+}
+button:focus{
+	outline: 0;
+
 }

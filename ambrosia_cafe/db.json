@@ -1,24 +1,72 @@
 {
+	"cakes": [
+		{
+			"id": 1,
+			"item":	"Red Velvet Cake",
+			"description": "This classic red velvet layer cake is made satisfyingly tender with buttermilk and topped with delicious silky white icing. An unquestionable wonder of the dessert world.",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "We recommend vanilla or pistachio ice cream with this dish.",
+			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
+			"photoUrl": "",
+			"price": "21.60" 
+		},
+		{
+			"id": 2,
+			"item": "Chocolate Peanut Butter Cheesecake",
+			"description": "Oreo crust, creamy peanut butter cheesecake filling loaded with chocolate chips, milk chocolate ganache with a pile of chopped Reese’s cups on top. Believe it or not this entry tastes even better than it looks.",
+			"allergies": "Those allergic to peanuts or chocolate should avoid this particular dish.",
+			"favorite": "This stunning treat is a cafe favorite and makes for a wonderful birthday cake.",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl": "",
+			"price": "20.20" 
+		},
+		{
+			"id": 3,
+			"item": "Extreme Double Chocolate Fudge Cake",
+			"description": "A rich moist chocolate cake with a chocolate buttercream icing swaddled in a lovely coat of delicious chocolate chips. This wonderous chocolatey beast is a serious contender for best cake in the world!",
+			"allergies": "Those allergic to chocolate should avoid this dish.",
+			"favorite": "",
+			"spicy": "We recommend vanilla or cookies and cream with this dessert.",
+			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
+			"photoUrl" : "",
+			"price": "22.10"  
+		},
+		{
+			"id": 4,
+			"item": "Oreo Cake",
+			"description": "This Chocolate Oreo Cake is to die for! A moist chocolate cake full of Oreo icing FULL of crushed up Oreos. An absolutely stunning cake dream realized for your feasting pleasure.",
+			"allergies": "Those allerigc to chocolate should avoid this dish.",
+			"favorite": "This stunning treat is a cafe favorite and makes for a wonderful birthday cake.",
+			"spicy": "We recommend chocolate chip mint or cookie dough ice cream with this cake.",
+			"vegan": "",
+			"photoUrl" : "",
+			"price": "17.50"  
+		}
+	],
 	"Brownies": [
 		{
 			"id": 5,
 			"item":	"Chocolate Amazeballs",
 			"description": "Our take on the classic chocolate but with a few twists.  If you love fudge, chocolate and walnuts this is the dessert for you!",
-			"allergies": "1",
-			"favorite": "1",
-			"spicy": "0",
-			"vegan": "0",
-			"photoUrl":  "https://unsplash.com/search/desserts?photo=WPRuXYLNY68"
+			"allergies": "Those allergic to chocolate should avoid this item.",
+			"favorite": "This is a unique and delicious dish, a cafe speciality.",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl":  "https://unsplash.com/search/desserts?photo=WPRuXYLNY68",
+			"price" : "12.50"
 		},
 		{
 			"id": 6,
 			"item": "Death by Fudge",
 			"description": "Very similar to our Chocolate Amazeballs, these brownies dont contain nuts, and instead we add more fudge and topped with some fresh berries",
-			"allergies": "0",
-			"favorite": "1",
-			"spicy": "0",
-			"vegan": "0",
-			"photoUrl": "https://unsplash.com/search/brownies?photo=toxlLueLNDs"
+			"allergies": "Those allerigc to chocolate should avoid this item.",
+			"favorite": "This is guaranteed to become a fudge lover's favorite.",
+			"spicy": "We recommend vanialla or rocky road ice cream with this desset.",
+			"vegan": "",
+			"photoUrl": "https://unsplash.com/search/brownies?photo=toxlLueLNDs",
+			"price": "13.20"
 		},
 		{
 			"id": 7,
@@ -28,7 +76,8 @@
 			"favorite": "",
 			"spicy": "",
 			"vegan": "",
-			"photoUrl" : "" 
+			"photoUrl" : "",
+			"price": "" 
 		},
 		{
 			"id": 8,
@@ -38,7 +87,57 @@
 			"favorite": "",
 			"spicy": "",
 			"vegan": "",
-			"photoUrl" : "" 
+			"photoUrl" : "",
+			"price": ""
 		}
-	]
+	],
+	"crepes": [
+		{
+			"id": 9,
+			"item":	"Classic Crepe",
+			"description": " This entry may seem simple but our experienced pastry chefs bring on the magic with their attention to detail and practiced preperation.",
+			"allergies": "",
+			"favorite": "We recommend this dish to new comers to the crepe. A base for future crepe exploration!",
+			"spicy": "",
+			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
+			"photoUrl": "",
+			"price":  "13.50"
+		},
+		{
+			"id": 10,
+			"item": "Fruit Crepe",
+			"description": "This is our classic crepe accompanied by an assortment of fruits of your choosing. All seasonal fruits available fresh.",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "We recommend vanilla ice cream or our papaya lime sorbet.",
+			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
+			"photoUrl": "",
+			"price": "11.40" 
+		},
+		{
+		"id": 11,
+		"item": "Nutella Crepe",
+			"description": "Nutella (hazelnut and chocolate whipped into a luscious creamy spread) is slathered on to this cutting-edge crepe",
+			"allergies": "Those allergic to peanuts should avoid this dish.",
+			"favorite": "",
+			"spicy": "We recommend chocolate or cookie dough ice cream.",
+			"vegan": "",
+			"photoUrl": "",
+			"price": "9.90"  
+		},
+		{
+			"id": 12,
+			"item": "Drowned Crepe",
+			"description": "This crepe comes alive in a pool of choclate and syrup. Dive into this lovely crepe oasis. Comes topped with a halo of whipped cream.",
+			"allergies": "",
+			"favorite": "",
+			"spicy": "",
+			"vegan": "",
+			"photoUrl": "",
+			"price": "14.55"  
+		}
+	],
+	"story": {
+		"text": "So you've been dreaming of a place where you can skip the main course and go right to the good stuff? You can stop dreaming. It's already here and it is called Ambrosia Cafe located at 1112 S Casino Center Blvd. We are all about the desserts, everything here is unapologetically sweet. You would expect a sweet spot like this to feature cookies, coffee, candy and ice cream, but it is our carefully constructed confections covered in fudge, ganache, chocolate chips and buttercream that keeps the customers coming back. The most difficult challenge at the Ambrosia Cafe is trying to make up your mind because the menu boasts the most appetizing looking desserts in the city guaranteed to taste as good as they look. We have been dishing up this dizzying array of delicious desserts for about a year. You might want to check it out, but heed our warning if you're looking to diet don't come here-we have a lot of calories!"
+	}
 }

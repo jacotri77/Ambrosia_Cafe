@@ -60,7 +60,7 @@ const styles = {
     color: '#233743'
   },
   icon:{
-    color: '#233743',
+    color: '#B1051D',
     fontSize: 23,
     marginLeft: 7
   }
@@ -97,7 +97,7 @@ class MenuSection extends React.Component {
                     <div className='dots' key={'item' + cake.id} ></div>    
                     <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                   </li>
-                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-facebook-official fa-4x" aria-hidden="true"></i></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-star fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"></i></div></li>
                 </div>
               )
             })}
@@ -111,7 +111,7 @@ class MenuSection extends React.Component {
                       <div className='dots' key={'item' + cake.id} ></div>    
                       <label style={styles.itemPrice} >{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                     </li>
-                      <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-star fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"></i></div></li>
                   </div>
                 )
               })}
@@ -125,7 +125,7 @@ class MenuSection extends React.Component {
                         <div className='dots' key={'item' + cake.id} ></div>    
                         <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                       </li>
-                        <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-star fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"></i><i style={styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"></i></div></li>
                     </div>
                   )
                 })}

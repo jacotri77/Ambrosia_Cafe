@@ -12,15 +12,15 @@ const styles = {
     width: 840,
     height: 300,
     position: 'relative',
-    top: '-250px',
+    top: '-245px',
     display:'inline-block',
     padding:'20px 25px 10px 25px',
   },
   menuDescription:{
     width: 800,
     height: 70,
-    margin: '10px 0 5px 5px',
-    overflow: 'visible'
+    margin: '0 0 5px 5px',
+    overflow: 'visible',
   },
   menuItem:{
     fontSize: 22,
@@ -44,19 +44,19 @@ const styles = {
     marginBottom: 0
   },
   itemPrice:{
-    fontsize: 24,
+    fontSize: 22,
     fontFamily: 'serif',
     color: 'black'
   },
   beforeIcons:{
     width:'85%',
-    display: 'inline-block',fontSize: 12,
-    fontFamily: 'Rock Salt',
+    display: 'inline-block',fontSize: 16,
+    fontFamily: 'Questrial',
     color: '#233743',
     textOverflow: 'initial',
     whiteSpace: 'normal',
     overflow: 'auto',
-    padding: ' 5px 10px 0 0'
+    padding: ' 0 10px 0 0'
   },
   icons:{
     width:'15%',

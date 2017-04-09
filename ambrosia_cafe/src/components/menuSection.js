@@ -5,7 +5,7 @@ import '../../node_modules/font-awesome/css/font-awesome.css'
 
 const styles = {
   container:{
-    height:1660
+    height:1600
   },
   menuBlock:{
     width: 840,
@@ -70,16 +70,15 @@ const styles = {
     marginLeft: 7
   },                       //for non applicable grey
   iconOff:{
-    color: '#666666',
+    display: 'none',
     fontsize: 23,
-    marginLeft: 7,
   },
   ttTextHeader:{
-    textAlign: 'left',
+    textAlign: 'center',
     background: '#233743',
     fontFamily: 'sans serif',
     fontSize: 20,
-    margin: '0 0 5px 0',
+    margin: '0 0 10px 0',
     width:220,
     border: '2px solid #B1051D',
     borderWidth: '0 0 2px 0'
@@ -117,7 +116,7 @@ class MenuSection extends React.Component {
                     <div className='dots' key={'item' + cake.id} ></div>    
                     <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                   </li>
-                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Allergy Information</span>{cake.allergies}</span></i><i style={styles.icon} className="fa fa-star fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>This is a Cafe Favorite</span>{cake.favorite}</span></i><i style={styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Comes with Ice Cream</span>{cake.spicy}</span></i><i style={styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}> Dairy/Egg Substitutes</span>{cake.vegan}</span></i></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={cake.allergies === "" ? styles.iconOff : styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Allergy Information</span>{cake.allergies}</span></i><i style={cake.favorite === "" ? styles.iconOff : styles.icon} className="fa fa-star fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>This is a Cafe Favorite</span>{cake.favorite}</span></i><i style={cake.spicy === "" ? styles.iconOff : styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Comes with Ice Cream</span>{cake.spicy}</span></i><i style={cake.vegan === "" ? styles.iconOff : styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}> Dairy/Egg Substitutes</span>{cake.vegan}</span></i></div></li>
                 </div>
               )
             })}
@@ -131,7 +130,7 @@ class MenuSection extends React.Component {
                       <div className='dots' key={'item' + cake.id} ></div>    
                       <label style={styles.itemPrice} >{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                     </li>
-                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Allergy Information</span>Allergy Information Allergy Information Allergy Information Allergy Information</span></i><i style={styles.icon} className="fa fa-star fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>This is a Cafe Favorite</span>Description applicable to this items favorite status</span></i><i style={styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Comes with Ice Cream</span>Information about recommended ice cream accompanient to this dish</span></i><i style={styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}> Dairy/Egg Substitutes</span>Information about the possible substitutes for milk and eggs</span></i></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={cake.allergies === "" ? styles.iconOff : styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Allergy Information</span>{cake.allergies}</span></i><i style={cake.favorite === "" ? styles.iconOff : styles.icon} className="fa fa-star fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>This is a Cafe Favorite</span>{cake.favorite}</span></i><i style={cake.spicy === "" ? styles.iconOff : styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Comes with Ice Cream</span>{cake.spicy}</span></i><i style={cake.vegan === "" ? styles.iconOff : styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}> Dairy/Egg Substitutes</span>{cake.vegan}</span></i></div></li>
                   </div>
                 )
               })}
@@ -145,7 +144,7 @@ class MenuSection extends React.Component {
                         <div className='dots' key={'item' + cake.id} ></div>    
                         <label style={styles.itemPrice}>{cake.item}</label><span style={styles.itemPrice}>{cake.price}</span>
                       </li>
-                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Allergy Information</span>Allergy Information Allergy Information Allergy Information Allergy Information</span></i><i style={styles.icon} className="fa fa-star fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>This is a Cafe Favorite</span>Description applicable to this items favorite status</span></i><i style={styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Comes with Ice Cream</span>Information about recommended ice cream accompanient to this dish</span></i><i style={styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}> Dairy/Egg Substitutes</span>Information about the possible substitutes for milk and eggs</span></i></div></li>
+                  <li style={styles.menuDescription}><div style={styles.beforeIcons}>{cake.description}</div><div style={styles.icons}><i style={cake.allergies === "" ? styles.iconOff : styles.icon} className="fa fa-exclamation fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Allergy Information</span>{cake.allergies}</span></i><i style={cake.favorite === "" ? styles.iconOff : styles.icon} className="fa fa-star fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>This is a Cafe Favorite</span>{cake.favorite}</span></i><i style={cake.spicy === "" ? styles.iconOff : styles.icon} className="fa fa-snowflake-o fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}>Comes with Ice Cream</span>{cake.spicy}</span></i><i style={cake.vegan === "" ? styles.iconOff : styles.icon} className="fa fa-vimeo fa-4x" aria-hidden="true"><span style={styles.ttText} className="tooltiptext"><span style={styles.ttTextHeader}> Dairy/Egg Substitutes</span>{cake.vegan}</span></i></div></li>
                     </div>
                   )
                 })}

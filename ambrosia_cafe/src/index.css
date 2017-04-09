@@ -205,6 +205,7 @@ li span{
     text-overflow: initial;
     white-space: normal;
     overflow: auto;
+    text-align: left;
 }
 .fa:hover .tooltiptext {
     visibility: visible;

@@ -97,7 +97,7 @@
 			"item":	"Classic Crepe",
 			"description": " This entry may seem simple but our experienced pastry chefs bring on the magic with their attention to detail and practiced preperation.",
 			"allergies": "",
-			"favorite": "We recommend this dish to new comers to the crepe. A base for future crepe exploration!",
+			"favorite": "A launch pad for future crepe exploration for those new to this treat!",
 			"spicy": "",
 			"vegan": "Almond milk and applesauce can be substituted for a delicious vegan treat.",
 			"photoUrl": "",
@@ -147,9 +147,22 @@
  		"post": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
 		},
 	"specialData": {
+
 		"id": 10,
 		"title": "Classic Crepe.......32",
 		"description": "Classic French Crepe made with original House recipe, sprinkled with a cinnamon-suggar mix, and topped off with a dab of our delisouse whipped cream"
+
+			"id": 69,
+			"title": "Classic Crepe.......32",
+			"description": "CLassic French Crepe made with original House recipe, sprinkled with a cinnamon-suggar mix, and topped off with a dab of our delisouse whipped cream"
+		},
+		"res":{
+			"name": ["Steven Wright"],
+			"guests": ["4"],
+			"date": ["Monday Aprile 26th 2017"],
+			"notes": ["No autographs"],
+			"seat": ["Indoor"]
+
 		}
 		
 }

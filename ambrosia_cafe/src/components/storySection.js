@@ -10,11 +10,12 @@ const styles = {
   		width: 640,
     	height: 475,
     	display:'inline-block',
-    	padding: '0 5px',
+    	padding: '0 20px',
     	textOverflow: 'initial',
     	whiteSpace: 'normal',
     	overflow: 'auto',
-    	fontSize: 18
+    	fontSize: 20,
+      fontFamily: 'Questrial'
   	},
   	leftPhotos:{
   		float: 'left',

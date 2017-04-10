@@ -10,9 +10,9 @@ const styles = {
     padding : ' 20px 0 0 40px'
   },
   inputLine:{
-  	height: 35,
-  	width: 340,
-  	fontFamily: 'Questrial',
+  	height: 45,
+  	width: 400,
+  	fontFamily: 'Rock Salt',
   	color: 'black',
   	float:'left',
   	clear: 'left',
@@ -20,15 +20,15 @@ const styles = {
   },
   inputBox:{
   	height: 100,
-  	width: 340,
-  	fontFamily: 'Questrial',
+  	width: 400,
+  	fontFamily: 'Rock Salt',
   	color: 'black',
   	float: 'left',
   	clear: 'left',
   	margin: 10,
   },
   label:{
-  	fontFamily: 'Questrial',
+  	fontFamily: 'Rock Salt',
   	color: 'black',
   	float: 'left',
   	clear: 'left',
@@ -36,33 +36,35 @@ const styles = {
   	fontSize: 22
   },
   select:{
-  	fontFamily: 'Questrial',
+  	fontFamily: 'Rock Salt',
   	color: 'black',
   	float: 'left',
   	clear: 'left',
   	margin: 10,
   	fontSize: 18,
-  	height: 35,
-  	width: 200
+  	height: 45,
+  	width: 300
   },
   submit:{
   	height: 60,
-  	width: 230,
+  	width: 400,
   	fontSize: 24,
   	float: 'left',
-  	background: '#6CB519',
+  	background: 'white',
+    outline: '2px solid #5c1f0d',
   	borderRadius: '5px',
-  	fontFamily: 'Questrial',
-  	marginLeft: 20
+  	fontFamily: 'Rock Salt', 
+  	marginLeft: 20,
+    color:'#233743'
   },
   verifyOn:{
-  	fontFamily: 'Questrial',
+  	fontFamily: 'Rock Salt', 
   	color: 'black',
   	float: 'left',
   	clear: 'right',
   	margin: 10,
   	fontSize: 20,
-  	border: 'solid 2px black',
+  	border: 'solid 2px #5c1f0d',
   	padding: 5
   },
   verifyOff:{

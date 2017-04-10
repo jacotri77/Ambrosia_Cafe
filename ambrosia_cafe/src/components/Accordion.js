@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuSection from './menuSection'
 import StorySection from './storySection'
+import Reserve from './Reserve'
 
 const styles = {
 	acc:{
@@ -25,7 +26,7 @@ class Accordion extends React.Component {
   	render() {
   		
     	return (
-      		<div style={styles.acc}>
+      		<div style={styles.acc} id="accArea">
       			
             <button type="button" className='accSection' onClick={this.handleAcc} value={"storyOpener"}> Story</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.opener} ref="storyOpener">
@@ -39,9 +40,7 @@ class Accordion extends React.Component {
 
             <button type="button" className='accSection' onClick={this.handleAcc} value={"reservationsOpener"}> Reservations</button>
       			<div className="w3-hide w3-btn w3-block" style={styles.opener} ref="reservationsOpener"> 
-      				<div className="leftPhotos"></div>
-      				<p > Rervations Form | Reservations Form | Reservations Form </p>
-      				<div className="rightPhotos"></div>
+      				  <Reserve/>
       			</div>
       		</div>
     	)

@@ -12,7 +12,7 @@ const styles = {
     width: 840,
     height: 300,
     position: 'relative',
-    top: '-245px',
+    top: '-210px',
     display:'inline-block',
     padding:'20px 25px 10px 25px',
   },

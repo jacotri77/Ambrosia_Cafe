@@ -60,35 +60,35 @@
 		{
 			"id": 6,
 			"item": "Death by Fudge",
-			"description": "Very similar to our Chocolate Amazeballs, these brownies dont contain nuts, and instead we add more fudge and topped with some fresh berries",
+			"description": "Very similar to our Chocolate Amazeballs, these brownies dont contain nuts, and instead we add more fudge and topped with some fresh berries.",
 			"allergies": "Those allerigc to chocolate should avoid this item.",
 			"favorite": "This is guaranteed to become a fudge lover's favorite.",
-			"spicy": "We recommend vanialla or rocky road ice cream with this desset.",
+			"spicy": "We recommend vanilla or rocky road ice cream with this dessert.",
 			"vegan": "",
 			"photoUrl": "https://unsplash.com/search/brownies?photo=toxlLueLNDs",
 			"price": "13.20"
 		},
 		{
 			"id": 7,
-			"item": "",
-			"description": "",
-			"allergies": "",
+			"item": "PB & Chocolate",
+			"description": "The perfect marraige of peanuts, sugar, and chocolate.  If you are a Reese’s fan, these are the brownies for you!",
+			"allergies": "Those allergic to nuts or chocolate should avoid this item",
 			"favorite": "",
 			"spicy": "",
 			"vegan": "",
-			"photoUrl" : "",
-			"price": "" 
+			"photoUrl" : "http://sweetpeaskitchen.com/wp-content/uploads/2013/08/Buckeye-Brownies2.jpg",
+			"price": "12.75" 
 		},
 		{
 			"id": 8,
-			"item": "",
-			"description": "",
-			"allergies": "",
+			"item": "Mint Chocolate Fudge Brownies",
+			"description": "This is a mint lover's dream come true.  Copious amounts of fudge and chocolate sauce offset with the cripsness of fresh mint taste.  The perfect way to end an evening.",
+			"allergies": "Those allergic to chocolate should avoid this item.",
 			"favorite": "",
-			"spicy": "",
+			"spicy": "We recommend pairing this with a nice port or coffee.",
 			"vegan": "",
-			"photoUrl" : "",
-			"price": ""
+			"photoUrl" : "https://s-media-cache-ak0.pinimg.com/736x/69/63/ba/6963ba825812ec4ddc87fa761db1497c.jpg",
+			"price": "14.50"
 		}
 	],
 	"crepes": [
@@ -139,5 +139,17 @@
 	],
 	"story": {
 		"text": "So you've been dreaming of a place where you can skip the main course and go right to the good stuff? You can stop dreaming. It's already here and it is called Ambrosia Cafe located at 1112 S Casino Center Blvd. We are all about the desserts, everything here is unapologetically sweet. You would expect a sweet spot like this to feature cookies, coffee, candy and ice cream, but it is our carefully constructed confections covered in fudge, ganache, chocolate chips and buttercream that keeps the customers coming back. The most difficult challenge at the Ambrosia Cafe is trying to make up your mind because the menu boasts the most appetizing looking desserts in the city guaranteed to taste as good as they look. We have been dishing up this dizzying array of delicious desserts for about a year. You might want to check it out, but heed our warning if you're looking to diet don't come here-we have a lot of calories!"
-	}
+	},
+	"feed": {
+ 		"id": 13,
+  		"title": "Come to Our Grand Opening!",
+  		"date": "May 25,",
+ 			"post": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+		},
+	"specialData": {
+			"id": 69,
+			"title": "Classic Crepe.......32",
+			"description": "CLassic French Crepe made with original House recipe, sprinkled with a cinnamon-suggar mix, and topped off with a dab of our delisouse whipped cream"
+		}
+		
 }

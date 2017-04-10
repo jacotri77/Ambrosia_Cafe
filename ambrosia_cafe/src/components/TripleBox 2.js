@@ -7,9 +7,8 @@ import GoogleMap from './GoogleMap'
 const styles = {
   container: {
     display: 'flex',
-    width:1440,
-    height:350,
     listStyleType:'none',
+    marginTop:20,
     margin:'auto'
   }
 }

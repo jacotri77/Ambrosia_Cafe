@@ -12,11 +12,11 @@ export function getFeed() {
 }
 
 
-export function getSpecial() {
-	axios.get('https://json-data.herokuapp.com/restaurant/special/1').then(special=>{
+export function getSpecials() {
+	axios.get('http://localhost:3001/db').then(res=>{
 		store.dispatch({
-			type: 'GET_SPECIAL',
-			special: special.data
+			type: 'GET_SPECIALS',
+			specialData: res.data
 		})
 	})
 }

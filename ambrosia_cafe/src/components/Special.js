@@ -1,7 +1,7 @@
 import React from 'react';
 
 import store from '../store'
-import {getSpecial} from '../api/feed'
+import {getSpecials} from '../api/feed'
 
 const styles = {
   specialbox: {
@@ -46,19 +46,18 @@ const styles = {
 export default React.createClass({
   getInitialState() {
     return{
-      special: []
-    }
+      specialData:{}  }
   },
   componentWillMount() {
     this.unsubscribe = store.subscribe(()=>{
-      const appState = store.getState()
+      const appState = store.getState().feedReducer.specialData.id
       console.log('appState', appState)
 
       this.setState({
-        special: appState.special
+        specialData: appState.specialData
     })
   })
-  getSpecial()
+  getSpecials()
 },
   componentWillUnmount() {
     this.unsubscribe()
@@ -68,9 +67,9 @@ export default React.createClass({
       <div style={styles.specialbox}>
         <ul style={styles.ul}>
           <p style={styles.Special}>Special</p>
-          <img style={styles.crepe} src={require("../images/crepes1.jpg")}  alt="crepe"/>
-          <li style={styles.classic}>{this.state.special.id}</li>
-          <li style={styles.description}>{this.state.special.menu_item_id}</li>
+          <img style={styles.crepe} src={require("../images/crepes1.jpg")}  alt="crepes"/>
+          <li style={styles.classic}>{this.state.specialData.title}</li>
+          <li style={styles.description}>{this.state.specialData.description}</li>
         </ul>
       </div>
     )

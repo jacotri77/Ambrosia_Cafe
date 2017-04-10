@@ -54,7 +54,7 @@ export default React.createClass({
 	componentWillMount() {
 		this.unsubscribe = store.subscribe(()=>{
 			const appState = store.getState().feedReducer.feed
-			console.log('appState', appState)
+			console.log('appStateffff', appState.feed)
 
 			this.setState({
 				feed: appState.feed

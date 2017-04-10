@@ -1,9 +1,10 @@
 import {combineReducers, createStore} from 'redux'
 import menuReducer from './reducers/menu'
-import reservationReducer from './reducers/reservation'
+import reservationsReducer from './reducers/reservations'
+import feedReducer from './reducers/feed'
 
 const rootReducer = combineReducers({
-  menuReducer, reservationReducer
+  menuReducer, reservationsReducer, feedReducer
 })
 
 const store = createStore(rootReducer)

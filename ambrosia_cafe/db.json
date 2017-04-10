@@ -143,13 +143,13 @@
 	"feed": {
  		"id": 13,
   		"title": "Come to Our Grand Opening!",
-  		"date": "May 25,",
- 			"post": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
+  		"date": "May 25, 2017",
+ 		"post": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit..."
 		},
 	"specialData": {
-			"id": 69,
-			"title": "Classic Crepe.......32",
-			"description": "CLassic French Crepe made with original House recipe, sprinkled with a cinnamon-suggar mix, and topped off with a dab of our delisouse whipped cream"
+		"id": 69,
+		"title": "Classic Crepe.......32",
+		"description": "CLassic French Crepe made with original House recipe, sprinkled with a cinnamon-suggar mix, and topped off with a dab of our delisouse whipped cream"
 		}
 		
 }

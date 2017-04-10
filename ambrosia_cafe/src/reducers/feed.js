@@ -7,9 +7,9 @@ const initialState = {
 export default function(state=initialState, action) {
 	switch(action.type) {
 		case 'GET_FEED':
-			return {...state, feed: action.feed}
+			return {...state, feed:{...action.feed}}
 		case 'GET_SPECIAL': 
-			return {...state, special: action.special}
+			return {...state, special:{...action.special}}
 		default:
 			return state
 	}

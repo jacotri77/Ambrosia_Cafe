@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from 'react'
 import store from '../store'
 import {getFeed} from '../api/feed'
 
@@ -30,7 +29,7 @@ const styles = {
 	 },
 	 mid: {
  	fontSize:13,
-	fontWeight:'bold',
+	
 	 },
 	 readmore: {
 	 border:'none',
@@ -54,7 +53,7 @@ export default React.createClass({
 	},
 	componentWillMount() {
 		this.unsubscribe = store.subscribe(()=>{
-			const appState = store.getState()
+			const appState = store.getState().feedReducer.feed
 			console.log('appState', appState)
 
 			this.setState({
@@ -80,7 +79,6 @@ export default React.createClass({
       		<li>{this.state.feed.post}</li>
       	</ul>
       	<button style={styles.readmore}>read more</button>
-
       </div>
     )
   }

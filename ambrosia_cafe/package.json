@@ -10,7 +10,7 @@
     "nuka-carousel": "^2.0.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "redux": "^3.6.0"
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "concurrently": "^3.4.0",

@@ -7,7 +7,7 @@
     "json-server": "^0.9.6",
     "font-awesome": "^4.7.0",
     "image-placeholder-unsplash": "^1.0.1",
-    "nuka-carousel": "^4.5.8",
+    "nuka-carousel": "^4.6.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "redux": "^4.0.1"
